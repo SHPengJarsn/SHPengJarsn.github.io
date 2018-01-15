@@ -13,9 +13,14 @@
 
 	<body>
 	<h1>这是h1</h1>
+	<button>提交</button>
 	</body>
 	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
 	<script type="text/javascript">
-		console.log($)
+		$(document).ready(function(){
+			$("button").click(function(){
+				console.log(1111)
+			})
+		})
 	</script>
 </html>
