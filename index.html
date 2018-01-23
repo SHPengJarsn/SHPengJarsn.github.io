@@ -1,21 +1,68 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 		<meta charset="UTF-8">
+		<!--M支持最高版本的ie浏览器，但是bootstrap从3.0开始不支持ie8以下的浏览器-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">   
+		<!--M支持响应式，移动设备优先-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
 		<title>老彭的个人主页</title>
-
+		<link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.css" rel="stylesheet">
 		<style type="text/css">
 			body{width:100%;height:100%;background: rgba(0,0,0,0.1) url("http://e.hiphotos.baidu.com/image/pic/item/500fd9f9d72a6059099ccd5a2334349b023bbae5.jpg") no-repeat ;background-size:100%;}
 			h1{color:#f00;}
+			p{border:1px solid #000}
 		</style>
 	</head>
 
 	<body>
-	<h1>这是h1</h1>
-	<button>提交</button>
+	<div class="container">
+    	<div class="row">
+    		<div class="col-md-4">
+    			<h1>我是一个1号标题号标题我是一</h1>
+    			<h2>我是一个2号标题号标题我是一</h2>
+    			<p class="lead">标题号标题我</p>
+    			<p class="text-left">Left aligned text.</p>
+				<p class="text-center">Center aligned text.</p>
+				<p class="text-right">Right aligned text.</p>
+				<p class="text-justify">Justified text.sdfasdf  asdfasf  sadfsafda asdf aewr adfasdf asdfasf  sadfsafda asdf aewr adfasdfasdfasf  sadfsafda asdf aewr adfasdf</p>
+				<p class="text-nowrap">No wrap text.Justified text.sdfasdf  asdfasf  sadfsafda asdf aewr adfasdf asdfasf  sadfsafda asdf aewr adfasdfasdfasf  sadfsafda asdf aewr adfasdf</p>
+    		</div>
+    		
+    	</div>
+    	<div class="row">
+    		<div class="col-md-6">
+    			<form>
+				  <div class="form-group">
+					<label for="exampleInputEmail1">请输入邮箱</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+					<label for="exampleInputPassword1">Password</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				 
+				  
+				  <button type="submit" class="btn btn-default">提交</button>
+				</form>
+				<form class="form-inline">
+				  <div class="form-group">
+					<label for="exampleInputName2">Name</label>
+					<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+				  </div>
+				  <div class="form-group">
+					<label for="exampleInputEmail2">Email</label>
+					<input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+				  </div>
+					  <button type="submit" class="btn btn-default">Send</button>
+				</form>
+    		</div>
+    	</div>
+    </div>
 	</body>
 	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$("button").click(function(){
